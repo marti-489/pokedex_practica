@@ -12,24 +12,50 @@
 
         <header class="titulo">
             <h1>Pokédex</h1>
-            <input type="text" placeholder="Pokemon Name or ID">
-            <button class="boton" type="button">
+            <form id="my-form" action="" class="flex-form">
+                <input id="pokemon-input" type="text" placeholder="Pokemon Name or ID" required minlength="1" maxlength="30">
+                <button id="btn-submit" class="boton" type="button" >
                 send
-            </button>
+                </button>
+            </form>
         </header>
         <div class="contenedor">
-            <section class="pokeinfo">
-                <div>ID:</div>
-                <div>Height:</div>
-                <div>Weight</div>
-                <div>Type</div>
+            <section id="pokeinfo" class="hide">
+                <img src="" id="content-img">
+                <p id="name"></p>
+                <div>ID: <p id="content-id"></p></div>
+                <div>Height: <p id="content-height"></p></div>
+                <div>Weight <p id="content-weight"></p></div>
+                <div>Type <p id="content-type"></p></div>
             </section>
-            <section class="result">
+            <section id="not-found" class="hide">
                 <div>Pokemon not found...</div>
             </section>
                    
         </div>
-               
+        <!-- <main class="flex-container">
+            <h1 class="title">Pokédex</h1>
+            <form class="flex-form" action="">
+                <input id="pokemon-input" type="text" required minlength="1" maxlength="30" placeholder="Pokemon Name or ID">
+                <input id="btn-submit" type="button" value="Send">
+            </form>
+            <div id="card">
+                <img src="" id="poke-img">
+                <div class="card-container">
+                    <p id="name"></p>
+                    <p class="poke-id item-content">ID:</p>
+                    <p class="item-info" id="content-id"></p>
+                    <p class="poke-height item-content">Height:</p>
+                    <p class="item-info" id="content-height"></p>
+                    <p class="poke-weight item-content">Weight:</p>
+                    <p class="item-info" id="content-weight"></p>
+                    <p class="poke-type item-content">Type:</p>
+                    <p class="item-info" id="content-type"></p>
+                </div>
+            </div>
+            <div id="card-error">Pokemon not found...</div>
+        </main> -->
+        <script src="./script.js"></script>
     </body>
 </html>
 

@@ -29,15 +29,29 @@ input{
     display: flex;
     width: 100%;
 }
-.pokeinfo{
+#pokeinfo{
     background: white;
     padding: 20px;
     width: 30%;
     flex-grow: 1;
   
 }
-.result{
+#not-found{
     color: red;
     font-size: 20px;
     flex-grow: 2;
 }
+
+.hide {
+    display: none;
+}
+
+.valid-value {
+  border: 2px solid #00FF00;
+}
+
+.invalid-value {
+  border: 2px solid #FF0000;
+}
+
+/* RGB ->  */
